@@ -1,0 +1,20 @@
+.slide-item-right {
+  margin-right: 0px;
+  position: relative;
+  right: -100%; /* Początkowa pozycja poza ekranem po prawej */
+  transition: right 1s ease-in-out; /* Animacja przesunięcia */
+}
+
+.slide-item-right.slide-in {
+  right: 0; /* Końcowa pozycja na ekranie */
+}
+
+.slide-item-left {
+  position: relative;
+  left: -100%; /* Początkowa pozycja poza ekranem po prawej */
+  transition: left 1s ease-in-out; /* Animacja przesunięcia */
+}
+
+.slide-item-left.slide-in {
+  left: 0; /* Końcowa pozycja na ekranie */
+}

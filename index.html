@@ -3,59 +3,201 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Kuba</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/style-slide.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="cloud"></div>
+    <div class="background-div">
+      <div class="sky">
+        <div class="slide-item-left cloud"></div>
+      </div>
     </div>
-    <script>
-      function randomText() {
-        var text = [
-          "C#",
-          "C#",
-          "C#",
-          "C#",
-          "C#",
-          "C++",
-          "Phyton",
-          "PHP",
-          "JQuery",
-          "MVC",
-          "MVVM",
-          "DDD",
-          "OOP",
-          "RestAPI",
-          "ASP.NET",
-          "WPF",
-          "WinForms",
-          "Git",
-          "Github",
-        ];
-        letter = text[Math.floor(Math.random() * text.length)];
-        return letter;
-      }
-      function rain() {
-        let cloud = document.querySelector(".cloud");
-        let e = document.createElement("div");
-        let left = Math.floor(Math.random() * 250);
-        let size = Math.random() * 1.5;
-        let duraction = Math.random() * 1;
-        e.classList.add("text");
-        e.innerText = randomText();
-        e.style.left = left + "px";
-        e.style.fontSize = 0.8 + size + "em";
-        e.style.animationDuration = 1 + duraction + "s";
-        cloud.appendChild(e);
-        setTimeout(function () {
-          cloud.removeChild(e);
-        }, 2000);
-      }
 
-      setInterval(function () {
-        rain();
-      }, 200);
-    </script>
+    <header class="header">
+      <a href="#" class="logo">
+        Jakub
+        <span>Szulc</span>
+      </a>
+
+      <nav class="navbar">
+        <a href="#about-me" class="active">O mnie</a>
+        <a href="#experience">Doświadczenie</a>
+        <a href="#projects">Projekty</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </header>
+
+    <main class="main" id="about-me">
+      <div class="top-info">
+        <div class="slide-item-right">
+          <img src="img/me.png" alt="Opis obrazka 1" />
+        </div>
+      </div>
+
+      <section class="container-timeline" id="experience">
+        <h2>Kariera</h2>
+        <div class="right-section timeline">
+          <ul>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">2020 - teraz</h3>
+                <h1>Porgramista WH Okna / Sekcja baz dancyh</h1>
+                <p>
+                  Praca nad rozwojem aplikacji do konstrukcji okien a w tym
+                  projekt do generowania modeli 3D okien, projekt do
+                  integrowania dokumnetów z innymi programami, projekt do doboru
+                  oraz obrazownia okuć. Przygotowywania baz dancyh okuć oraz
+                  tworzenie narzędzi do generowania baz.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">2020</h3>
+                <h1>Programista Junior Magento</h1>
+                <p>
+                  Zarządzanie oraz rozwój strony oraz sklepu operatej na
+                  oprogramowaniu Magento oraz integracja sklepu z platforma
+                  Alegro.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="info projects" id="projects">
+        <h2>Projekty</h2>
+        <div class="right-section tile">
+          <div class="content">
+            <div class="main-content">
+              <h1>Aplikacja magazynowa</h1>
+              <p>
+                System w technologi WPF służący do zarządzania magazynem.
+                Posiada ona między innymi funkcję generującą trasy do
+                skompetowania zlecenia na magazynie. Pojekt napisamy zgodnie z
+                podejściem DDD oraz MVVM z wykorzystaniem języka c#
+              </p>
+            </div>
+            <div class="image right">
+              <img src="img/project-warehouse.JPG" alt="Aplikacja magazynowa" />
+            </div>
+          </div>
+
+          <div class="tech-items">
+            <div class="github-link">
+              <a href="https://github.com/FroxS/magazyn-kuba-inz">
+                <img src="img/github.png" alt="Github" />
+              </a>
+            </div>
+            <span>WPF</span>
+            <span>C#</span>
+            <span>SQL</span>
+            <span>DDD</span>
+            <span>MVVM</span>
+            <span>Entity Framework</span>
+          </div>
+        </div>
+
+        <div class="right-section tile">
+          <div class="content">
+            <div class="main-content">
+              <h1>Gra samochodowa</h1>
+              <p>
+                Prosta gra samochodowa napisana z wykorzystaniem silnika Unity.
+                Zaimplementowana została tam fizyka auta oraz stworzona własna
+                mapa.
+              </p>
+            </div>
+            <div class="image right">
+              <img src="img/car-game.JPG" alt="Opis obrazka 2" />
+            </div>
+          </div>
+
+          <div class="tech-items">
+            <div class="github-link">
+              <a href="https://github.com/FroxS/CarGame">
+                <img src="img/github.png" alt="Github" />
+              </a>
+            </div>
+            <span>C#</span>
+            <span>Unity</span>
+          </div>
+        </div>
+
+        <div class="right-section tile">
+          <div class="content">
+            <div class="main-content">
+              <h1>Serwis rezerwacji hotelowej</h1>
+              <p>
+                Serwis służący do rezerwacji pokoi w hotelach dziłajacy na
+                stronie internetowej jak i na aplikacji deskotopowej
+              </p>
+            </div>
+            <div class="image right">
+              <img
+                src="img/projekt-rezerwacja1.JPG"
+                alt="Projekt rezerwacji hoteli"
+              />
+            </div>
+          </div>
+
+          <div class="tech-items">
+            <div class="github-link">
+              <a href="https://github.com/FroxS/HotelRezerwacja_PZ">
+                <img src="img/github.png" alt="Github" />
+              </a>
+            </div>
+            <span>WPF</span>
+            <span>ASP.NET</span>
+            <span>C#</span>
+            <span>SQL</span>
+            <span>DDD</span>
+            <span>MVVM</span>
+            <span>Entity Framework</span>
+          </div>
+        </div>
+
+        <div class="right-section tile">
+          <div class="content">
+            <div class="main-content">
+              <h1>Wiele innych ...</h1>
+              <p>
+                Wiele inncyh mniejszych aplikacji napisanych na rózne potrzeby
+                takie jak API do powiązania do danych krymilanych
+                <strong>CrimeGraph</strong> z wykorzystaniem bazy danych Neo4j
+                czy aplikacja informacyjna do zarządania gwiazdami z
+                wykorzystaniem node.js. Wiele innych dostępnych na moim profilu
+                na Github ...
+              </p>
+            </div>
+            <div class="image right">
+              <img src="img/github.png" alt="img/github.png" />
+            </div>
+          </div>
+
+          <div class="tech-items">
+            <div class="github-link">
+              <a href="https://github.com/FroxS?tab=repositories">
+                <img src="img/github.png" alt="Github" />
+              </a>
+            </div>
+            <span>WPF</span>
+            <span>ASP.NET</span>
+            <span>C#</span>
+            <span>SQL</span>
+            <span>DDD</span>
+            <span>MVVM</span>
+            <span>Neo4j</span>
+            <span>Entity Framework</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/rain.js"></script>
+    <script src="js/slide.js"></script>
   </body>
 </html>
