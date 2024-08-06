@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kuba</title>
-    <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/style-slide.css" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="background-div">
@@ -19,7 +24,6 @@
         Jakub
         <span>Szulc</span>
       </a>
-
       <nav class="navbar">
         <a href="#about-me" class="active">O mnie</a>
         <a href="#experience">Doświadczenie</a>
@@ -29,12 +33,37 @@
       </nav>
     </header>
 
-    <main class="main" id="about-me">
-      <div class="top-info">
-        <div class="slide-item-right">
-          <img src="img/me.png" alt="Opis obrazka 1" />
+    <main class="main">
+      <section class="top-info" id="about-me">
+        <div class="info-description">
+          <h1>Cześć, tu <span>Jakub</span></h1>
+          <h3 class="text-animation">Tutaj <span></span></h3>
+          <p>
+            Jestem programistą specjalizującym się w tworzeniu oprogramowania w
+            technologii WPF z naciskiem na backend. Tworzę aplikacje w C#,
+            ASP.NET i zarządzam bazami danych: SQL, MySQL, Neo4j, MongoDB. Mam
+            szeroką wiedzę z zakresu Entity Framework oraz doświadczenie w
+            integracji systemów bazodanowych. Skupiam się na dostarczaniu
+            efektywnych, skalowalnych rozwiązań, dbając o wysoką jakość kodu i
+            zgodność z najlepszymi praktykami inżynierii oprogramowania, takimi
+            jak MVVM i DDD.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+          </div>
+          <div class="btn-top">
+            <a href="#" class="btn">Tutaj</a>
+            <a href="#contact" class="btn">Kontakt</a>
+          </div>
         </div>
-      </div>
+
+        <div class="slide-item-right">
+          <div class="top-info-img">
+            <img src="img/me.png" alt="Opis obrazka 1" />
+          </div>
+        </div>
+      </section>
 
       <section class="container-timeline" id="experience">
         <h2>Kariera</h2>
@@ -81,15 +110,35 @@
                 podejściem DDD oraz MVVM z wykorzystaniem języka c#
               </p>
             </div>
-            <div class="image right">
-              <img src="img/project-warehouse.JPG" alt="Aplikacja magazynowa" />
+            <div class="slider image right">
+              <div class="slides">
+                <img
+                  src="img/project-warehouse.JPG"
+                  alt="Aplikacja magazynowa"
+                />
+                <img
+                  src="img/project-warehouse1.JPG"
+                  alt="Aplikacja magazynowa"
+                />
+                <img
+                  src="img/project-warehouse2.JPG"
+                  alt="Aplikacja magazynowa"
+                />
+                <img
+                  src="img/project-warehouse3.JPG"
+                  alt="Aplikacja magazynowa"
+                />
+              </div>
+              <div class="dots"></div>
+              <button class="arrow left">&lt;</button>
+              <button class="arrow right">&gt;</button>
             </div>
           </div>
 
           <div class="tech-items">
             <div class="github-link">
               <a href="https://github.com/FroxS/magazyn-kuba-inz">
-                <img src="img/github.png" alt="Github" />
+                <i class="bx bxl-github"></i>
               </a>
             </div>
             <span>WPF</span>
@@ -111,15 +160,21 @@
                 mapa.
               </p>
             </div>
-            <div class="image right">
-              <img src="img/car-game.JPG" alt="Opis obrazka 2" />
+            <div class="slider image right">
+              <div class="slides">
+                <img src="img/car-game.JPG" alt="Gra samochodowa" />
+                <img src="img/car-game1.JPG" alt="Gra samochodowa" />
+              </div>
+              <div class="dots"></div>
+              <button class="arrow left">&lt;</button>
+              <button class="arrow right">&gt;</button>
             </div>
           </div>
 
           <div class="tech-items">
             <div class="github-link">
               <a href="https://github.com/FroxS/CarGame">
-                <img src="img/github.png" alt="Github" />
+                <i class="bx bxl-github"></i>
               </a>
             </div>
             <span>C#</span>
@@ -136,18 +191,35 @@
                 stronie internetowej jak i na aplikacji deskotopowej
               </p>
             </div>
-            <div class="image right">
-              <img
-                src="img/projekt-rezerwacja1.JPG"
-                alt="Projekt rezerwacji hoteli"
-              />
+            <div class="slider image right">
+              <div class="slides">
+                <img
+                  src="img/projekt-rezerwacja1.JPG"
+                  alt="Projekt rezerwacji hoteli"
+                />
+                <img
+                  src="img/projekt-rezerwacja2.JPG"
+                  alt="Projekt rezerwacji hoteli"
+                />
+                <img
+                  src="img/projekt-rezerwacja3.JPG"
+                  alt="Projekt rezerwacji hoteli"
+                />
+                <img
+                  src="img/projekt-rezerwacja4.JPG"
+                  alt="Projekt rezerwacji hoteli"
+                />
+              </div>
+              <div class="dots"></div>
+              <button class="arrow left">&lt;</button>
+              <button class="arrow right">&gt;</button>
             </div>
           </div>
 
           <div class="tech-items">
             <div class="github-link">
               <a href="https://github.com/FroxS/HotelRezerwacja_PZ">
-                <img src="img/github.png" alt="Github" />
+                <i class="bx bxl-github"></i>
               </a>
             </div>
             <span>WPF</span>
@@ -174,14 +246,14 @@
               </p>
             </div>
             <div class="image right">
-              <img src="img/github.png" alt="img/github.png" />
+              <i class="bx bxl-github"></i>
             </div>
           </div>
 
           <div class="tech-items">
             <div class="github-link">
               <a href="https://github.com/FroxS?tab=repositories">
-                <img src="img/github.png" alt="Github" />
+                <i class="bx bxl-github"></i>
               </a>
             </div>
             <span>WPF</span>
@@ -195,9 +267,49 @@
           </div>
         </div>
       </section>
+
+      <section class="info contact" id="contact">
+        <h2>Kontakt</h2>
+        <form
+          id="contact-form"
+          class="right-section"
+          method="GET"
+          target="_blank"
+        >
+          <div class="input-group">
+            <div class="input-box">
+              <input type="text" id="subject" placeholder="Temat" />
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+
+            <div class="input-box-2">
+              <textarea
+                id="message"
+                name=""
+                cols="30"
+                rows="10"
+                placeholder="Wiadomość"
+              ></textarea>
+              <input type="submit" placeholder="Wyślij" class="btn" />
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
 
+    <div id="fullscreen-viewer" class="fullscreen-viewer">
+      <button class="arrow left">&lt;</button>
+      <img id="fullscreen-image" src="" alt="Full screen view" />
+      <button class="arrow right">&gt;</button>
+      <span class="close">&times;</span>
+    </div>
+
+    <footer class="footer"></footer>
+
     <script src="js/rain.js"></script>
+    <script src="js/nav.js"></script>
     <script src="js/slide.js"></script>
+    <script src="js/image_slider.js"></script>
+    <script src="js/mail.js"></script>
   </body>
 </html>
