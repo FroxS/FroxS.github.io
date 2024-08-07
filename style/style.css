@@ -189,9 +189,59 @@ a {
   visibility: collapse;
 }
 
+.popup-menu-icon {
+  position: absolute;
+  right: 30px;
+  height: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 100%;
+  height: 5px;
+  background-color: var(--font-color);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-7px, 7px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+
+.navbar.active {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 10px;
+  top: 50px;
+  right: 0px;
+  min-width: 200px;
+  margin: 10px;
+}
+
 @media (min-width: 768px) {
   .navbar {
     visibility: visible;
+  }
+
+  .popup-menu-icon {
+    visibility: collapse;
   }
 }
 
@@ -226,18 +276,26 @@ main .top-info {
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
+  margin-top: 50px;
 }
 
 .info-description {
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 10px 10px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   text-align: left;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 576px) {
+  .info-description {
+    padding: 20px 30px;
+    margin-top: 3rem;
+  }
 }
 
 .top-info-img {
@@ -249,7 +307,6 @@ main .top-info {
 .top-info-img {
   position: relative;
   width: 300px;
-  height: 300px;
   border-radius: 50%;
   overflow: hidden;
   background: var(--main-color);
@@ -266,26 +323,55 @@ main .top-info {
   z-index: 1; /* Zapewnia, że obrazek jest na wierzchu */
 }
 
-@media (min-width: 768px) {
-  .info-description {
-    margin-left: 100px;
+@media (min-width: 576px) {
+  .top-info-img {
+    width: 400px;
+    height: 400px;
   }
+}
 
+@media (min-width: 768px) {
   main .top-info {
     flex-direction: row;
     justify-content: space-between;
   }
 
+  .info-description p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 922px) {
+  .info-description {
+    margin-left: 5%;
+  }
+
   .top-info-img {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
   }
 }
 
 @media (min-width: 1200px) {
   .info-description {
     width: 1000px;
+    margin-left: 10%;
+  }
+
+  .top-info-img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .info-description {
     margin-left: 300px;
+  }
+
+  .top-info-img {
+    width: 500px;
+    height: 500px;
   }
 }
 
@@ -465,6 +551,14 @@ main .top-info .info-description .projects h2 {
 .tile .image {
   flex: 1;
   text-align: center;
+  order: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .tile .image {
+    margin-bottom: 0px;
+  }
 }
 
 .tile .image img {
@@ -488,15 +582,16 @@ main .top-info .info-description .projects h2 {
   order: 1;
 }
 
-@media (max-width: 768px) {
-  .tile .content {
-    flex-direction: column;
-  }
-}
-
 .tile .content {
   order: 2;
   display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .tile .content {
+    flex-direction: row;
+  }
 }
 
 .tile .image.right {
@@ -639,11 +734,12 @@ main .top-info .info-description .projects h2 {
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
+  text-align: justify;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .tile .content p {
-    text-align: justify;
+    text-align: left;
   }
 }
 
@@ -677,13 +773,6 @@ main .top-info .info-description .projects h2 {
   align-content: center;
 }
 
-@media (max-width: 768px) {
-  .tile .image {
-    order: 0;
-    margin-bottom: 20px;
-  }
-}
-
 .container-timeline {
   min-height: 100vh;
   width: 100%;
@@ -699,16 +788,16 @@ section {
 }
 
 section h2 {
-  width: 80%;
+  /* width: 80%; */
   height: auto;
   max-width: 800px;
-  margin: 50px 100px;
+  margin: 60px 50px 0px 20px;
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   section h2 {
-    margin: 50px 50px;
+    margin: 60px 100px 0px 20px;
   }
 }
 
@@ -734,6 +823,7 @@ section h2 {
 
 .timeline {
   position: relative;
+  margin-top: 50px;
 }
 
 .timeline ul {
@@ -792,7 +882,7 @@ section h2 {
     margin-bottom: 50px;
   }
 
-  .timeline ul li:nth-child(odd) {
+  .timeline ul li:nth-child(even) {
     float: left;
     clear: right;
     transform: translateX(-30px);
@@ -800,7 +890,7 @@ section h2 {
     margin-left: -1000px;
   }
 
-  .timeline ul li:nth-child(even) {
+  .timeline ul li:nth-child(odd) {
     float: right;
     clear: left;
     transform: translateX(30px);
@@ -823,12 +913,12 @@ section h2 {
     top: 0px;
   }
 
-  .timeline ul li:nth-child(odd)::before {
+  .timeline ul li:nth-child(even)::before {
     transform: translate(50%, -50%);
     right: -30px;
   }
 
-  .timeline ul li:nth-child(even)::before {
+  .timeline ul li:nth-child(odd)::before {
     transform: translate(-50%, -50%);
     left: -30px;
   }

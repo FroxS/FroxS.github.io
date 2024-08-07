@@ -36,3 +36,8 @@ window.onscroll = () => {
     }
   });
 };
+
+document.getElementById("menu-icon").addEventListener("click", function () {
+  this.classList.toggle("change");
+  navbar.classList.toggle("active");
+});
