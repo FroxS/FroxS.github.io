@@ -6,7 +6,6 @@
     <title>Kuba</title>
     <link rel="stylesheet" href="style/style-slide.css" />
     <link rel="stylesheet" href="style/style.css" />
-
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -32,36 +31,46 @@
       </div>
 
       <nav class="navbar">
-        <a href="#about-me" class="active">O mnie</a>
-        <a href="#experience">Doświadczenie</a>
-        <a href="#projects">Projekty</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#about-me" class="active" data-text-id="menu_about_me"
+          >O mnie</a
+        >
+        <a href="#work" data-text-id="menu_work">Praca</a>
+        <a href="#projects" data-text-id="menu_projects">Projekty</a>
+        <a href="#contact" data-text-id="menu_contact">Kontakt</a>
       </nav>
+
+      <div class="lang" id="btn-lang">
+        <img src="img/en.png" alt="EN" />
+      </div>
     </header>
 
     <main class="main">
       <section class="top-info" id="about-me">
         <div class="info-description">
-          <h1>Cześć, tu <span>Jakub</span></h1>
+          <div class="flex-gap-10">
+            <h1 data-text-id="greeting">Cześć, tu</h1>
+            <h1><span>Jakub</span></h1>
+          </div>
+
           <h3 class="text-animation">Tutaj <span></span></h3>
-          <p>
-            Jestem programistą specjalizującym się w tworzeniu oprogramowania w
-            technologii WPF z naciskiem na backend. Tworzę aplikacje w C#,
-            ASP.NET i zarządzam bazami danych: SQL, MySQL, Neo4j, MongoDB. Mam
-            szeroką wiedzę z zakresu Entity Framework oraz doświadczenie w
-            integracji systemów bazodanowych. Skupiam się na dostarczaniu
-            efektywnych, skalowalnych rozwiązań, dbając o wysoką jakość kodu i
-            zgodność z najlepszymi praktykami inżynierii oprogramowania, takimi
-            jak MVVM i DDD.
+          <p data-text-id="about_me_description">
+            Jestem doświadczonym programistą, specjalizującym się w tworzeniu
+            zaawansowanego oprogramowania w technologii WPF, z głównym naciskiem
+            na rozwój backendu. Projektuję i implementuję aplikacje w C# oraz
+            ASP.NET. Skupiam się na dostarczaniu efektywnych, skalowalnych
+            rozwiązań, przy jednoczesnym dbaniu o wysoką jakość kodu i
+            przestrzeganie najlepszych praktyk inżynierii oprogramowania, takich
+            jak MVVM oraz DDD.
           </p>
           <div class="social-icons">
             <a href="#"><i class="bx bxl-github"></i></a>
             <a href="#"><i class="bx bxl-linkedin-square"></i></a>
           </div>
           <div class="btn-top">
-            <a href="#" class="btn">Tutaj</a>
-            <a href="#contact" class="btn">Kontakt</a>
+            <a href="#" class="btn" data-text-id="btn_here">Tutaj</a>
+            <a href="#contact" class="btn" data-text-id="btn_contact"
+              >Kontakt</a
+            >
           </div>
         </div>
 
@@ -72,15 +81,19 @@
         </div>
       </section>
 
-      <section class="container-timeline" id="experience">
-        <h2>Kariera</h2>
+      <section class="container-timeline" id="work">
+        <h2 data-text-id="career_title">Kariera</h2>
         <div class="right-section timeline">
           <ul>
             <li>
               <div class="timeline-content">
-                <h3 class="date">2020 - teraz</h3>
-                <h1>Porgramista WH Okna / Sekcja baz dancyh</h1>
-                <p>
+                <h3 class="date">
+                  2020 - <span data-text-id="now">teraz</span>
+                </h3>
+                <h1 data-text-id="job1_title">
+                  Porgramista WH Okna / Sekcja baz dancyh
+                </h1>
+                <p data-text-id="job1_description">
                   Praca nad rozwojem aplikacji do konstrukcji okien a w tym
                   projekt do generowania modeli 3D okien, projekt do
                   integrowania dokumnetów z innymi programami, projekt do doboru
@@ -92,8 +105,8 @@
             <li>
               <div class="timeline-content">
                 <h3 class="date">2020</h3>
-                <h1>Programista Junior Magento</h1>
-                <p>
+                <h1 data-text-id="job2_title">Programista Junior Magento</h1>
+                <p data-text-id="job2_description">
                   Zarządzanie oraz rozwój strony oraz sklepu operatej na
                   oprogramowaniu Magento oraz integracja sklepu z platforma
                   Alegro.
@@ -105,12 +118,12 @@
       </section>
 
       <section class="info projects" id="projects">
-        <h2>Projekty</h2>
+        <h2 data-text-id="projects_title">Projekty</h2>
         <div class="right-section tile">
           <div class="content">
             <div class="main-content">
-              <h1>Aplikacja magazynowa</h1>
-              <p>
+              <h1 data-text-id="project1_title">Aplikacja magazynowa</h1>
+              <p data-text-id="project1_description">
                 System w technologi WPF służący do zarządzania magazynem.
                 Posiada ona między innymi funkcję generującą trasy do
                 skompetowania zlecenia na magazynie. Pojekt napisamy zgodnie z
@@ -160,8 +173,8 @@
         <div class="right-section tile">
           <div class="content">
             <div class="main-content">
-              <h1>Gra samochodowa</h1>
-              <p>
+              <h1 data-text-id="project2_title">Gra samochodowa</h1>
+              <p data-text-id="project2_description">
                 Prosta gra samochodowa napisana z wykorzystaniem silnika Unity.
                 Zaimplementowana została tam fizyka auta oraz stworzona własna
                 mapa.
@@ -192,8 +205,8 @@
         <div class="right-section tile">
           <div class="content">
             <div class="main-content">
-              <h1>Serwis rezerwacji hotelowej</h1>
-              <p>
+              <h1 data-text-id="project3_title">Serwis rezerwacji hotelowej</h1>
+              <p data-text-id="project3_description">
                 Serwis służący do rezerwacji pokoi w hotelach dziłajacy na
                 stronie internetowej jak i na aplikacji deskotopowej
               </p>
@@ -242,8 +255,8 @@
         <div class="right-section tile">
           <div class="content">
             <div class="main-content">
-              <h1>Wiele innych ...</h1>
-              <p>
+              <h1 data-text-id="project4_title">Wiele innych ...</h1>
+              <p data-text-id="project4_description">
                 Wiele inncyh mniejszych aplikacji napisanych na rózne potrzeby
                 takie jak API do powiązania do danych krymilanych
                 <strong>CrimeGraph</strong> z wykorzystaniem bazy danych Neo4j
@@ -276,7 +289,7 @@
       </section>
 
       <section class="info contact" id="contact">
-        <h2>Kontakt</h2>
+        <h2 data-text-id="contact_title">Kontakt</h2>
         <form
           id="contact-form"
           class="right-section"
@@ -311,8 +324,24 @@
       <span class="close">&times;</span>
     </div>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+      </div>
 
+      <div class="mini-nav">
+        <a href="#about-me" data-text-id="menu_about_me">O mnie</a>
+        <a href="#work" data-text-id="menu_work">Praca</a>
+        <a href="#projects" data-text-id="menu_projects">Projekty</a>
+        <a href="#contact" data-text-id="menu_contact">Kontakt</a>
+      </div>
+
+      <p data-text-id="footer_copyright">
+        @ Jakub Szulc | Wszystkie prawa zastrzeżone
+      </p>
+    </footer>
+    <script src="js/lang.js"></script>
     <script src="js/rain.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/slide.js"></script>

@@ -20,4 +20,4 @@ let observer = new IntersectionObserver((entries, observer) => {
   });
 }, observerOptions);
 
-observer.observe(document.querySelector("#experience"));
+observer.observe(document.querySelector("#work"));
