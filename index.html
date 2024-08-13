@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kuba</title>
+    <title>Jakub Szulc</title>
+    <link rel="icon" href="img/logo.ico" />
     <link rel="stylesheet" href="style/style-slide.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link
@@ -16,6 +17,7 @@
       <div class="sky">
         <div class="slide-item-left cloud"></div>
       </div>
+      <h1 class="lang-letter">C#</h1>
     </div>
 
     <header class="header">
@@ -37,37 +39,40 @@
         <a href="#work" data-text-id="menu_work">Praca</a>
         <a href="#projects" data-text-id="menu_projects">Projekty</a>
         <a href="#contact" data-text-id="menu_contact">Kontakt</a>
+        <div class="lang" id="btn-lang">
+          <img src="img/en.png" alt="EN" tag="en" />
+        </div>
       </nav>
-
-      <div class="lang" id="btn-lang">
-        <img src="img/en.png" alt="EN" />
-      </div>
     </header>
 
     <main class="main">
-      <section class="top-info" id="about-me">
+      <section class="top-info">
         <div class="info-description">
           <div class="flex-gap-10">
             <h1 data-text-id="greeting">Cześć, tu</h1>
             <h1><span>Jakub</span></h1>
           </div>
 
-          <h3 class="text-animation">Tutaj <span></span></h3>
+          <h3 class="text-animation">
+            <span></span>
+          </h3>
           <p data-text-id="about_me_description">
-            Jestem doświadczonym programistą, specjalizującym się w tworzeniu
-            zaawansowanego oprogramowania w technologii WPF, z głównym naciskiem
-            na rozwój backendu. Projektuję i implementuję aplikacje w C# oraz
-            ASP.NET. Skupiam się na dostarczaniu efektywnych, skalowalnych
-            rozwiązań, przy jednoczesnym dbaniu o wysoką jakość kodu i
-            przestrzeganie najlepszych praktyk inżynierii oprogramowania, takich
-            jak MVVM oraz DDD.
+            Jestem programistą specjalizującym się w tworzeniu oprogramowania
+            komputerowego. Tworzę aplikacje stacjonarne oraz różnego rodzaju
+            serwisy i strony internetowe, które są z nimi zintegrowane. Skupiam
+            się na dostarczaniu efektywnych i skalowalnych rozwiązań, przy
+            jednoczesnym dbaniu o wysoką jakość kodu oraz przestrzeganie
+            najlepszych praktyk inżynierii oprogramowania.
           </p>
           <div class="social-icons">
             <a href="#"><i class="bx bxl-github"></i></a>
             <a href="#"><i class="bx bxl-linkedin-square"></i></a>
           </div>
           <div class="btn-top">
-            <a href="#" class="btn" data-text-id="btn_here">Tutaj</a>
+            <a href="#about-me" class="btn" data-text-id="menu_about_me"
+              >O mnie</a
+            >
+
             <a href="#contact" class="btn" data-text-id="btn_contact"
               >Kontakt</a
             >
@@ -77,6 +82,37 @@
         <div class="slide-item-right">
           <div class="top-info-img">
             <img src="img/me.jpg" alt="Opis obrazka 1" />
+          </div>
+        </div>
+      </section>
+
+      <section class="info info-about" id="about-me">
+        <div class="right-section tile">
+          <div class="content">
+            <div class="main-content">
+              <h1 data-text-id="menu_about_me">O mnie</h1>
+              <p data-text-id="about_long">
+                Cześć, nazywam się Jakub Szulc i zajmuję się tworzeniem
+                oprogramowania dla użytkowników. Tworzę aplikacje od
+                najprostszych po te bardziej zaawansowane. Moim głównym językiem
+                programowania jest C#, ale nie ograniczam się tylko do niego –
+                na co dzień piszę także w C++ i sporadycznie korzystam z
+                rozwiązań jak na przykład Python, JavaScript, PHP czy VBA. W
+                swoich projektach często wykorzystuję relacyjne bazy danych,
+                takie jak SQL, choć inne typy baz danych również nie są mi obce.
+                Mam doświadczenie w pracy z bazami danych takimi jak PostgreSQL,
+                MariaDB, a także z bazami nierelacyjnymi jak Neo4j, Redis czy
+                MongoDB. Staram się pisać kod czytelnie i zgodnie z wzorcami
+                projektowymi, które poznałem podczas nauki oraz pracy, m.in.
+                DDD, MVVM i OOP. Mam doświadczenie w pracy zespołowej, dzięki
+                czemu sprawnie poruszam się po systemach kontroli wersji, takich
+                jak GIT. Dodatkowo, potrafię zintegrować stworzone przeze mnie
+                serwisy poprzez API.
+              </p>
+            </div>
+            <div class="top-info-img about-me-image">
+              <img src="img/me.jpg" alt="Ja" />
+            </div>
           </div>
         </div>
       </section>
@@ -94,11 +130,12 @@
                   Porgramista WH Okna / Sekcja baz dancyh
                 </h1>
                 <p data-text-id="job1_description">
-                  Praca nad rozwojem aplikacji do konstrukcji okien a w tym
-                  projekt do generowania modeli 3D okien, projekt do
-                  integrowania dokumnetów z innymi programami, projekt do doboru
-                  oraz obrazownia okuć. Przygotowywania baz dancyh okuć oraz
-                  tworzenie narzędzi do generowania baz.
+                  Pracuje nad rozwojem aplikacji do konstrukcji oraz produkcji
+                  okien.W tym tworzę takie podprojekty jak projekt do
+                  generowania modeli 3D okien, projekt do integrowania
+                  dokumnetów z innymi programami, projekt do doboru oraz
+                  obrazownia okuć. Przygotowywauje również baz dancyh okuć oraz
+                  tworzę narzędza do generowania takich baz.
                 </p>
               </div>
             </li>
@@ -125,9 +162,12 @@
               <h1 data-text-id="project1_title">Aplikacja magazynowa</h1>
               <p data-text-id="project1_description">
                 System w technologi WPF służący do zarządzania magazynem.
-                Posiada ona między innymi funkcję generującą trasy do
-                skompetowania zlecenia na magazynie. Pojekt napisamy zgodnie z
-                podejściem DDD oraz MVVM z wykorzystaniem języka c#
+                Posiada ona między innymi takie funkcje jak generowanie trasy do
+                skompetowania zlecenia na magazynie dla magazyniera, kreator
+                reagaów magazynowhc, rozkałdanie produktów na regałach,
+                zarządzanie stanami magazynowaymi od przyjęcia az po wydanie.
+                Pojekt został napisamy głównie z języku C# zgodnie z przyjętami
+                wzorcami projektowymi takimi jak DDD oraz MVVM.
               </p>
             </div>
             <div class="slider image right">
@@ -175,9 +215,10 @@
             <div class="main-content">
               <h1 data-text-id="project2_title">Gra samochodowa</h1>
               <p data-text-id="project2_description">
-                Prosta gra samochodowa napisana z wykorzystaniem silnika Unity.
-                Zaimplementowana została tam fizyka auta oraz stworzona własna
-                mapa.
+                Gra samochodowa która została napisana w silniku Unity.
+                Zaimplementowana została tam fizyka auta którą sam opracowałem
+                oraz zaprojektowana mała mapa do poryszania się oraz tor
+                wyścigowy.
               </p>
             </div>
             <div class="slider image right">
@@ -207,8 +248,9 @@
             <div class="main-content">
               <h1 data-text-id="project3_title">Serwis rezerwacji hotelowej</h1>
               <p data-text-id="project3_description">
-                Serwis służący do rezerwacji pokoi w hotelach dziłajacy na
-                stronie internetowej jak i na aplikacji deskotopowej
+                Serwis służący do rezerwacji pokoi w hotelach, działający na
+                stronie internetowej jak i na aplikacji deskotopowej dla
+                uzytkowników stacjonarnych.
               </p>
             </div>
             <div class="slider image right">
@@ -289,17 +331,27 @@
       </section>
 
       <section class="info contact" id="contact">
-        <h2 data-text-id="contact_title">Kontakt</h2>
         <form
           id="contact-form"
           class="right-section"
           method="GET"
           target="_blank"
         >
+          <h2 data-text-id="contact_title">Kontakt</h2>
           <div class="input-group">
             <div class="input-box">
-              <input type="text" id="subject" placeholder="Temat" />
-              <input type="email" id="email" placeholder="Email" />
+              <input
+                type="text"
+                id="subject"
+                data-placeholder-id="contact_form_subject"
+                placeholder="Temat"
+              />
+              <input
+                type="email"
+                id="email"
+                data-placeholder-id="contact_form_email"
+                placeholder="Email"
+              />
             </div>
 
             <div class="input-box-2">
@@ -308,9 +360,15 @@
                 name=""
                 cols="30"
                 rows="10"
+                data-placeholder-id="contact_form_message"
                 placeholder="Wiadomość"
               ></textarea>
-              <input type="submit" placeholder="Wyślij" class="btn" />
+              <input
+                type="submit"
+                data-value-id="contact_form_submit"
+                value="Wyślij"
+                class="btn"
+              />
             </div>
           </div>
         </form>

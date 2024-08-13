@@ -20,12 +20,16 @@ const translations = {
     en: "Hi, I'm ",
   },
   text_animation: {
-    pl: "Tutaj <span></span>",
-    en: "Here <span></span>",
+    pl: "Tutaj",
+    en: "Here",
   },
   about_me_description: {
-    pl: "Jestem doświadczonym programistą, specjalizującym się w tworzeniu zaawansowanego oprogramowania w technologii WPF, z głównym naciskiem na rozwój backendu. Projektuję i implementuję aplikacje w C# oraz ASP.NET. Skupiam się na dostarczaniu efektywnych, skalowalnych rozwiązań, przy jednoczesnym dbaniu o wysoką jakość kodu i przestrzeganie najlepszych praktyk inżynierii oprogramowania, takich jak MVVM oraz DDD.",
-    en: "I am an experienced developer specializing in creating advanced software using WPF technology, with a primary focus on backend development. I design and implement applications in C# and ASP.NET. I focus on delivering efficient, scalable solutions while ensuring high code quality and adherence to best software engineering practices, such as MVVM and DDD.",
+    pl: "Jestem programistą specjalizującym się w tworzeniu oprogramowania komputerowego. Tworzę aplikacje stacjonarne oraz różnego rodzaju serwisy i strony internetowe, które są z nimi zintegrowane. Skupiam się na dostarczaniu efektywnych i skalowalnych rozwiązań, przy jednoczesnym dbaniu o wysoką jakość kodu oraz przestrzeganie najlepszych praktyk inżynierii oprogramowania.",
+    en: "I am a programmer specializing in creating computer software. I create desktop applications and various types of services and websites that are integrated with them. I focus on delivering effective and scalable solutions, while ensuring high code quality and following the best practices of software engineering.",
+  },
+  about_long: {
+    pl: "Cześć, nazywam się Jakub Szulc i zajmuję się tworzeniem oprogramowania dla użytkowników. Tworzę aplikacje od najprostszych po te bardziej zaawansowane. Moim głównym językiem programowania jest C#, ale nie ograniczam się tylko do niego – na co dzień piszę także w C++ i sporadycznie korzystam z rozwiązań jak na przykład Python, JavaScript, PHP czy VBA. W swoich projektach często wykorzystuję relacyjne bazy danych, takie jak SQL, choć inne typy baz danych również nie są mi obce. Mam doświadczenie w pracy z bazami danych takimi jak PostgreSQL, MariaDB, a także z bazami nierelacyjnymi jak Neo4j, Redis czy MongoDB. Staram się pisać kod czytelnie i zgodnie z wzorcami projektowymi, które poznałem podczas nauki oraz pracy, m.in. DDD, MVVM i OOP. Mam doświadczenie w pracy zespołowej, dzięki czemu sprawnie poruszam się po systemach kontroli wersji, takich jak GIT. Dodatkowo, potrafię zintegrować stworzone przeze mnie serwisy poprzez API.",
+    en: "Hi, my name is Jakub Szulc and I create software for users. I create applications from the simplest to the more advanced ones. My main programming language is C#, but I don't limit myself to it - I also write in C++ on a daily basis and occasionally use solutions such as Python, JavaScript, PHP or VBA. In my projects, I often use relational databases such as SQL, although other types of databases are also familiar to me. I have experience working with databases such as PostgreSQL, MariaDB, as well as non-relational databases such as Neo4j, Redis or MongoDB. I try to write code legibly and in accordance with the design patterns that I learned during my studies and work, including DDD, MVVM and OOP. I have experience in teamwork, thanks to which I efficiently navigate version control systems such as GIT. Additionally, I can integrate services I have created via API.",
   },
   btn_here: {
     pl: "Tutaj",
@@ -48,8 +52,8 @@ const translations = {
     en: "WH Okna Developer / Database Section",
   },
   job1_description: {
-    pl: "Praca nad rozwojem aplikacji do konstrukcji okien, w tym projekt do generowania modeli 3D okien, projekt do integrowania dokumentów z innymi programami, projekt do doboru oraz obrazowania okuć. Przygotowywanie baz danych okuć oraz tworzenie narzędzi do generowania baz.",
-    en: "Work on the development of window construction applications, including a project for generating 3D window models, a project for integrating documents with other programs, a project for selecting and visualizing fittings. Preparation of fitting databases and creation of tools for database generation.",
+    pl: "Pracuje nad rozwojem aplikacji do konstrukcji oraz produkcji okien.W tym tworzę takie podprojekty jak projekt do generowania modeli 3D okien, projekt do integrowania dokumnetów z innymi programami, projekt do doboru oraz obrazownia okuć. Przygotowywauje również baz dancyh okuć oraz tworzę narzędza do generowania takich baz.",
+    en: "I work on the development of applications for the construction and production ofwindows. In this I create such subprojects as a project for generating 3D window models, a project for integrating documents with other programs, a project for selecting and imaging fittings. I also prepare databases of fittings and create tools for generating such databases.",
   },
   job2_title: {
     pl: "Programista Junior Magento",
@@ -68,24 +72,24 @@ const translations = {
     en: "Warehouse Application",
   },
   project1_description: {
-    pl: "System w technologii WPF służący do zarządzania magazynem. Posiada funkcję generującą trasy do skompletowania zlecenia na magazynie. Projekt napisany zgodnie z podejściem DDD oraz MVVM z wykorzystaniem języka C#.",
-    en: "A WPF technology system for warehouse management. It has a function that generates routes for order completion in the warehouse. The project was written in accordance with DDD and MVVM approaches using C#.",
+    pl: "System w technologi WPF służący do zarządzania magazynem. Posiada ona między innymi takie funkcje jak generowanie trasy do skompetowania zlecenia na magazynie dla magazyniera, kreator reagaów magazynowhc, rozkałdanie produktów na regałach, zarządzanie stanami magazynowaymi od przyjęcia az po wydanie. Pojekt został napisamy głównie z języku C# zgodnie z przyjętami wzorcami projektowymi takimi jak DDD oraz MVVM.",
+    en: "A WPF technology system for warehouse management. It has, among others, such functions as generating a route for completing an order in the warehouse for the warehouseman, a warehouse rack creator, arranging products on shelves, managing warehouse stock from receipt to issue. The project was written mainly in C# in accordance with accepted design patterns such as DDD and MVVM.",
   },
   project2_title: {
     pl: "Gra samochodowa",
     en: "Car Game",
   },
   project2_description: {
-    pl: "Prosta gra samochodowa napisana z wykorzystaniem silnika Unity. Zaimplementowano fizykę auta oraz stworzono własną mapę.",
-    en: "A simple car game written using the Unity engine. Car physics have been implemented, and a custom map was created.",
+    pl: "Gra samochodowa która została napisana w silniku Unity. Zaimplementowana została tam fizyka auta którą sam opracowałem oraz zaprojektowana mała mapa do poryszania się oraz tor wyścigowy.",
+    en: "A car game that was written in the Unity engine. It has implemented car physics that I developed myself and designed a small map for driving and a race track.",
   },
   project3_title: {
     pl: "Serwis rezerwacji hotelowej",
     en: "Hotel Reservation Service",
   },
   project3_description: {
-    pl: "Serwis służący do rezerwacji pokoi w hotelach działający na stronie internetowej jak i na aplikacji desktopowej.",
-    en: "A service for booking hotel rooms, working on both the website and desktop application.",
+    pl: "Serwis służący do rezerwacji pokoi w hotelach, działający na stronie internetowej jak i na aplikacji deskotopowej dla uzytkowników stacjonarnych.",
+    en: "A service for booking hotel rooms, available on a website and as a desktop application for stationary users.",
   },
   project4_title: {
     pl: "Wiele innych ...",
@@ -122,43 +126,52 @@ const translations = {
 };
 
 function changeLanguage(language) {
-  const elements = document.querySelectorAll("[data-text-id]");
+  let elements = document.querySelectorAll("[data-text-id]");
   elements.forEach((element) => {
     const key = element.getAttribute("data-text-id");
     element.textContent = translations[key][language];
   });
+  elements = document.querySelectorAll("[data-placeholder-id]");
+  elements.forEach((elements) => {
+    const key = elements.getAttribute("data-placeholder-id");
+    elements.placeholder = translations[key][language];
+  });
+
+  elements = document.querySelectorAll("[data-value-id]");
+  elements.forEach((elements) => {
+    const key = elements.getAttribute("data-value-id");
+    elements.value = translations[key][language];
+  });
 }
 
 function getCurrentLanguage() {
-  const storedLanguage = localStorage.getItem("language");
-
-  return storedLanguage || "pl";
+  var userLang = navigator.language || navigator.userLanguage;
+  return userLang;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   const currentLanguage = getCurrentLanguage();
-  //if (currentLanguage != "pl") updateLanguageIcon(currentLanguage);
+  updateLanguageIcon(currentLanguage);
 });
 
 document.querySelector(".lang").addEventListener("click", function () {
-  const currentLanguage = getCurrentLanguage();
-  const newLanguage = currentLanguage === "en" ? "pl" : "en";
-
-  localStorage.setItem("language", newLanguage);
-
-  updateLanguageIcon(newLanguage);
+  const imgElement = document.querySelector("#btn-lang img");
+  updateLanguageIcon(imgElement.tag);
 });
 
 function updateLanguageIcon(language) {
   const imgElement = document.querySelector("#btn-lang img");
 
-  if (language === "pl") {
+  console.log(language);
+  if (language === "pl" || language === "pl-PL") {
     imgElement.src = "img/en.png";
     imgElement.alt = "EN";
+    imgElement.tag = "en";
     changeLanguage("pl");
   } else if (language === "en") {
     imgElement.src = "img/pl.png";
     imgElement.alt = "PL";
+    imgElement.tag = "pl";
     changeLanguage("en");
   }
 }

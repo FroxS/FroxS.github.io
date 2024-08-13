@@ -32,7 +32,7 @@ window.onscroll = () => {
         let currentheader = document.querySelector(
           "header nav a[href*=" + id + " ]"
         );
-        currentheader.classList.add("active");
+        if (currentheader != null) currentheader.classList.add("active");
       });
     }
   });

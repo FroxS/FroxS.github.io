@@ -112,6 +112,23 @@ a {
   box-shadow: 90px 0 0 30px var(--cloud-color);
 }
 
+.background-div .lang-letter {
+  position: relative;
+  right: 10%;
+  top: 200px;
+  font-size: 250px;
+  text-shadow: 5px 5px 20px var(--main-color);
+  filter: blur(10px);
+  visibility: collapse;
+}
+
+@media (min-width: 768px) {
+  .background-div .lang-letter {
+    visibility: visible;
+    font-size: 200px;
+  }
+}
+
 .text {
   position: absolute;
   top: 40px;
@@ -155,7 +172,7 @@ header {
   }
 }
 
-header ::before {
+.header:before {
   content: "";
   position: absolute;
   top: 0;
@@ -188,6 +205,7 @@ a {
 
 .navbar {
   visibility: hidden;
+  display: flex;
 }
 
 .popup-menu-icon {
@@ -274,10 +292,9 @@ a {
 }
 
 .header .lang {
-  position: absolute;
-  right: 50px;
   width: 30px;
   height: 20px;
+  margin-left: 10px;
 }
 
 .header .lang img {
@@ -319,11 +336,7 @@ main .top-info {
 
 .top-info-img {
   position: relative;
-  width: 100%;
   height: 100%;
-}
-
-.top-info-img {
   position: relative;
   width: 300px;
   border-radius: 50%;
@@ -420,6 +433,8 @@ main .top-info {
   font-size: 34px;
   font-weight: 600;
   min-width: 280px;
+  display: flex;
+  gap: 10px;
 }
 
 .text-animation span {
@@ -633,6 +648,37 @@ main .top-info .info-description .projects h2 {
   order: 3;
 }
 
+.about-me-image {
+  max-width: 300px;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .info-about .right-section {
+    margin: auto;
+  }
+}
+
+.info-about .content {
+  flex-direction: column-reverse;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .info-about .right-section {
+    margin-left: 0;
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 768px) {
+  .info-about .content {
+    flex-direction: row;
+  }
+}
+
 .slider {
   position: relative;
   max-width: 600px;
@@ -839,12 +885,12 @@ section h2 {
   width: 80%;
   height: auto;
   max-width: 800px;
-  margin: 0 100px;
+  margin: auto 100px;
 }
 
 @media (max-width: 992px) {
   .right-section {
-    margin: 0 auto;
+    margin: auto;
     width: 90%;
   }
 }
@@ -974,8 +1020,9 @@ section h2 {
 }
 
 .contact form {
-  gap: 3rem;
+  gap: 10px;
   text-align: center;
+  max-width: 600px;
 }
 
 @media (min-width: 768px) {
@@ -983,6 +1030,7 @@ section h2 {
     display: flex;
     margin-left: 100px;
     justify-content: flex-end;
+    flex-direction: column;
   }
 }
 
