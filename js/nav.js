@@ -1,4 +1,5 @@
 let navbar = document.querySelector(".navbar");
+let header = document.querySelector(".header");
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 let btnMenu = document.querySelector(".popup-menu-icon");
@@ -43,6 +44,9 @@ window.addEventListener("resize", function () {
     if (navbar && navbar.classList.contains("active")) {
       navbar.classList.remove("active");
     }
+    if (header && header.classList.contains("active")) {
+      header.classList.remove("active");
+    }
     if (btnMenu && btnMenu.classList.contains("change")) {
       btnMenu.classList.remove("change");
     }
@@ -54,6 +58,9 @@ window.addEventListener("load", function () {
     if (navbar && navbar.classList.contains("active")) {
       navbar.classList.remove("active");
     }
+    if (header && header.classList.contains("active")) {
+      header.classList.remove("active");
+    }
     if (btnMenu && btnMenu.classList.contains("change")) {
       btnMenu.classList.remove("change");
     }
@@ -62,5 +69,6 @@ window.addEventListener("load", function () {
 
 document.getElementById("menu-icon").addEventListener("click", function () {
   navbar.classList.toggle("active");
+  header.classList.toggle("active");
   this.classList.toggle("change");
 });

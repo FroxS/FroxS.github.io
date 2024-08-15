@@ -171,6 +171,10 @@ header {
     padding: 10px 12% 10px;
   }
 }
+.header.active:before {
+  opacity: 1;
+  filter: blur(0);
+}
 
 .header:before {
   content: "";
@@ -253,7 +257,9 @@ a {
   width: 100%;
   margin-top: 0px;
   padding-top: 50px;
+  padding-bottom: 10px;
   z-index: 10000000;
+  background-color: var(--tile-background);
 }
 
 @media (min-width: 768px) {
