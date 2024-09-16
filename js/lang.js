@@ -80,7 +80,7 @@ const translations = {
     en: "Car Game",
   },
   project2_description: {
-    pl: "Gra samochodowa która została napisana w silniku Unity. Zaimplementowana została tam fizyka auta którą sam opracowałem oraz zaprojektowana mała mapa do poryszania się oraz tor wyścigowy.",
+    pl: "Gra samochodowa została napisana z wykorzystaniem silnika Unity. Zaimplementowałem w niej opracowaną przez siebie fizykę pojazdu, a także zaprojektowałem małą mapę oraz tor wyścigowy do poruszania się.",
     en: "A car game that was written in the Unity engine. It has implemented car physics that I developed myself and designed a small map for driving and a race track.",
   },
   project3_title: {
